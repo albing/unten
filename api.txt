@@ -1,0 +1,14 @@
+	NAME		METHOD		ARGS			RETURN
+1) 	/location/	GET		person#			* GPS coords
+								* mode (pickup, en route, dropping off)
+
+2) 	/location/	PUT		(person#)/GPS coords	* OK (200)
+
+3) 	/status/	GET		person# (driver)	* driver
+								* passengers
+								* car info
+
+4)	/im/		PUT(/POST?)	[in/out], person#	* in=car data
+								* out = OK
+
+5) 	/req		GET		()			* list of car data
